@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS avis (
     name VARCHAR(255) NOT NULL,
     content VARCHAR(255) NOT NULL,
     note DECIMAL(5) NOT NULL,
-    publish VARCHAR(255) NOT NULL,
+    publish VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS avis_users (
