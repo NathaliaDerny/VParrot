@@ -69,7 +69,24 @@ header .logo h1 {
     border-radius: 50%;
 }
 
-.number {
+.connexion {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 25px;
+    background: linear-gradient(#D92332,#D9777F);
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+main {
+    color: black;
+
+}
+
+.form{
+    padding: 10px 25px;
+}
+button .form {
     font-size: 14px;
     color: #fff;
     padding: 10px 25px;
@@ -79,6 +96,10 @@ header .logo h1 {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: black;
     color: white;
     text-align: center;

@@ -1,10 +1,15 @@
 <!-- formulaire, header et footer -->
+<?php 
+require_once 'lib/required.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Vincent Parrot</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -15,7 +20,7 @@
             </div>
 
             <div class="logo">
-                <img src="image/Logo v parrot.png" alt="">
+                <img src="assets/pictures/Logo v parrot.png" alt="">
                 <h1>Garage V.Parrot</h1>
             </div>
             <ul class="menu">
@@ -24,17 +29,17 @@
                 <li><a href="#cars">Ventes</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="number">
-                <p>0523541010</p>
+            <div class="connexion">
+                <p>Déconnectez-vous</p>
             </div>
         </header>
 
         <main>
-            <div>
-                <form>
-                    <label for="brands">Constructeur</label>
-                    <input type="text" class="" id="brands" name="brands" required>
-                    <button type="submit">Créer un vehicules</button>
+            <div class="formulaire">
+                <form method="post" enctype="multipart/form-data" action="lib/gearbox.php">
+                    <label for="name">Boite de vitesse</label>
+                    <input type="text" class="" id="name" name="name" required>
+                    <button type="submit" class="form">Créer un vehicules</button>
                 </form>
             </div>
         </main>
