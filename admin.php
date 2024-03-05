@@ -38,8 +38,10 @@ require_once 'lib/required.php';
             <div class="formulaire">
                 <form method="post" enctype="multipart/form-data" action="lib/gearbox.php">
                     <label for="name">Boite de vitesse</label>
-                    <input type="text" class="" id="name" name="name" required>
+                    <input type="text" class="gearbox" id="name" name="name" required>
                     <button type="submit" class="form">Créer un vehicules</button>
+                    <button type="submit" class="form">Modifier</button>
+                    <button type="submit" class="form">Supprimer</button>
                 </form>
             </div>
         </main>
